@@ -1,0 +1,23 @@
+{
+  "name": "setup-2_19",
+  "version": "1.0.0",
+  "description": "This is setup with hardhat 2.19",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "deploy:prod_mainnet": "NODE_ENV=prod hardhat run --network mainnet",
+    "deploy:dev_sepolia": "NODE_ENV=dev hardhat run --network sepolia",
+    "verify:dev_sepolia": "NODE_ENV=dev hardhat verify --network sepolia"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
